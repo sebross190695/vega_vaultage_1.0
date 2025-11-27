@@ -1,0 +1,11 @@
+{
+    "demoUser": {
+        "id": "demo-user-001",
+        "email": "demo@vegavault.com",
+        "password": "demopassword",
+        "username": "DemoUser",
+        "balance": 1000,
+        "joinDate": "2025-11-26",
+        "status": "active"
+    }
+}
