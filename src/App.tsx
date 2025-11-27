@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useAuth } from './context/AuthContext';
 import { AuthForm } from './components/Auth/AuthForm';
 import { Header } from './components/Layout/Header';
@@ -63,11 +63,15 @@ function App() {
     return <AuthForm />;
   }
 
+  const handleSetActiveSection = (section: string) => {
+    setActiveSection(section as SectionType);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-black to-black text-white">
       <Header />
       <div className="flex">
-        <Sidebar activeSection={activeSection} setActiveSection={setActiveSection} />
+        <Sidebar activeSection={activeSection} setActiveSection={handleSetActiveSection} />
         <main className="flex-1 p-6">
           {renderSection()}
         </main>

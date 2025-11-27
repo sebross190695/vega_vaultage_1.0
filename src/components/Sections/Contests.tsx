@@ -1,6 +1,7 @@
+import React from 'react';
 import { Trophy } from 'lucide-react';
 
-export default function Contests() {
+export const Contests: React.FC = () => {
   const contests = [
     { name: 'Weekly Wagering', prize: '$10,000', ends: '3 days', participants: 1247 },
     { name: 'Slots Tournament', prize: '$5,000', ends: '5 days', participants: 892 },
@@ -48,4 +49,4 @@ export default function Contests() {
       </div>
     </div>
   );
-}
+};

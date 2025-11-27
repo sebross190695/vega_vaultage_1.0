@@ -3,7 +3,7 @@ import { Gamepad2, Coins, Gift, Users, Tag, Settings, History, TrendingUp, Zap, 
 
 interface SidebarProps {
   activeSection: string;
-  setActiveSection: object;
+  setActiveSection: (section: string) => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({ activeSection, setActiveSection }) => {

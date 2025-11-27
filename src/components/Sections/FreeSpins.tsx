@@ -1,6 +1,7 @@
+import React from 'react';
 import { Trophy } from 'lucide-react';
 
-export default function FreeSpins() {
+export const FreeSpins: React.FC = () => {
   return (
     <div>
       <h2 className="text-2xl font-bold text-white mb-6">My Free Spins</h2>
@@ -32,4 +33,4 @@ export default function FreeSpins() {
       </div>
     </div>
   );
-}
+};
